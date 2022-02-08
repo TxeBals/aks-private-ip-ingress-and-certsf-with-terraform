@@ -76,9 +76,9 @@ resource "azurerm_kubernetes_cluster" "aks" {
 
 }
 
-# resource "azurerm_role_assignment" "aks_subnet" {
-#   scope                = data.terraform_remote_state.vnetstate.outputs.vnetakssubnet_id
-#   role_definition_name = "Network Contributor"
-#   principal_id         = azurerm_kubernetes_cluster.aks.identity[0].principal_id
-# }
+resource "azurerm_role_assignment" "aks_subnet" {
+  scope                = data.terraform_remote_state.vnetstate.outputs.vnetakssubnet_id
+  role_definition_name = "Network Contributor"
+  principal_id         = data.terraform_remote_state.uaistate.outputs.uai_id 
+}
 
