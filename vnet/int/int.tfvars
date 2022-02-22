@@ -1,5 +1,5 @@
 resource_group_name                             = "myResourceGroup"
-tags                                            = { Project = "condorcloud-int" }
+tags                                            = { Project = "" }
 ############################
 #  VARIABLES DE VNET Y SUBNETS
 ############################
