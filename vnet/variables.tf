@@ -26,7 +26,7 @@ variable "ObjectID" {
 #Commons
 variable "location" {
   description = "(Required) Location of the all services to be created"
-  default     = "northeurope"
+  default     = "westeurope"
 }
 
 variable "resource_group_name" {
@@ -55,7 +55,7 @@ variable "storage_resource_group" {
 
 variable "storage_account_name" {
   description = "(Required) Storage account name"
-  default     = "staaksprecondorcloud"
+  default     = "staaks"
 }
 
 variable "container_name" {
@@ -127,7 +127,7 @@ variable "vnet_aks_subnet_address_others" {
 
 variable "nsg_name" {
   description = "(Required) Name of the NSG to be created"
-  default     = "nsg-vnet-condorcloud"
+  default     = "nsg-vnet"
 }
 
 #######################################
