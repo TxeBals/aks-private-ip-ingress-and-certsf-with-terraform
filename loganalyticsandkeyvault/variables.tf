@@ -25,7 +25,7 @@ variable "ObjectID" {
 #Commons
 variable "location" {
   description = "(Required) Location of the all services to be created"
-  default     = "northeurope"
+  default     = "westeurope"
 }
 
 variable "resource_group_name" {
