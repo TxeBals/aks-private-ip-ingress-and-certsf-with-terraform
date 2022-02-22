@@ -39,7 +39,7 @@ variable "resource_group_id" {
 
 variable "tags" {
   description = "(Required) Tags to be applied to the all services to be created"
-  default     = { Project = "condorcloud-pre" }
+  default     = { Project = "" }
 }
 
 
@@ -50,7 +50,7 @@ variable "tags" {
 variable "storage_resource_group" {
   type     = string
   description = "Resource group name of the storage account"
-  default     = "rg-condorcloud-tfstate-pre"
+  default     = "rg-tfstate-pre"
 }
 
 variable "storage_account_name" {
