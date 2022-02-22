@@ -2,7 +2,7 @@
 #Commons
 variable "location" {
   description = "(Required) Location of the all services to be created"
-  default     = "northeurope"
+  default     = "westeurope"
 }
 
 variable "resource_group_name" {
@@ -15,7 +15,7 @@ variable "resource_group_id" {
 
 variable "tags" {
   description = "(Required) Tags to be applied to the all services to be created"
-  default     = { Project = "condorcloud-pre" }
+  default     = { Project = "" }
 }
 
 ###################################
